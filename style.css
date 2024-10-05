@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+.pages {
+  position: relative;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+.sect_1 {
+  background-image: url(runaway_black_hole_desktop.png);
+}
+.sect_2 {
+  background-image: url(https://spacey-kappa.vercel.app/assets/landscape-2ee9445b.jpg);
+}
+.sect_3 {
+  position: relative;
+  background-image: url(https://spacey-kappa.vercel.app/assets/eclipse-11d9479c.jpg);
+}
+.show {
+  background-image: url(moonlight.jpg);
+  position: relative;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hide {
+  display: none;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 30px;
+  left: 50px;
+  z-index: 1;
+  width: 50vw;
+}
+.header-container a {
+  margin-left: auto;
+  color: rgb(230, 174, 164);
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.spacey_info {
+  position: absolute;
+  bottom: 200px;
+  left: 50px;
+}
+
+.anchor {
+  border: 2px solid white;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+.newAnchor {
+  font-family: sans-serif;
+  border: 2px solid white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  color: #fff;
+}
+h1,
+h2,
+.header-container a,
+.anchor,
+p {
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.part_2,
+.part_3,
+.anchor,
+.spacey_info,
+.header-container {
+  color: white;
+}
+
+.spacey_info h1 {
+  font-size: 2.5em;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 0.6em;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-transform: lowercase;
+}
+.back2top {
+  position: absolute;
+  bottom: 10px;
+  left: 355px;
+  background-color: black;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 20%;
+  height: 30px;
+  border: 1px solid white;
+}
