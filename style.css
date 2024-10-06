@@ -63,14 +63,19 @@ a:hover .oldText {
 }
 
 a:hover .newText:before {
-  content: "Click for booking";
+  content: "Click here";
   color: rgb(230, 174, 164);
+}
+.anc:hover {
+  background-color: beige;
+  color: black;
+  border: 2px solid black;
 }
 h1,
 h2,
 .header-container a,
 .anchor,
-p {
+.spacey_info p {
   font-family: sans-serif;
   text-transform: uppercase;
 }
@@ -100,48 +105,84 @@ footer p {
   color: white;
   text-transform: lowercase;
 }
-.back2top {
-  position: absolute;
-  bottom: 10px;
-  left: 355px;
-  background-color: black;
-  color: #fff;
-  font-size: 1em;
-  border-radius: 20%;
-  height: 30px;
-  border: 1px solid white;
-}
+
 .booking {
   display: flex;
-  /* justify-content: space-around; */
-  color: white;
 }
 .booking_table {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: absolute;
-  background-color: #fff;
+  color: rgb(135, 41, 25);
   border-radius: 20px;
-  top: 150px;
-  right: 100px;
+  top: 200px;
+  right: 230px;
   width: 50vw;
   height: 40vh;
+  background-color: bisque;
 }
 
-.booking_table h1 {
-  color: black;
-}
 .options {
-  border: 1px solid black;
-  border-radius: 5px;
+  position: relative;
   width: 180px;
   text-align: center;
-  height: auto;
-  margin: 10px;
-  padding: 10px;
+  height: 120px;
+  margin-top: 20px;
   color: black;
-  font-size: 0.5em;
-  font-style: italic;
+
   font-weight: bold;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.btn {
+  width: auto;
+  height: auto;
+  padding: 3px 5px;
+  position: absolute;
+  bottom: 2px;
+  left: 65px;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: turquoise;
+  color: tomato;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.para {
+  position: absolute;
+  color: Black;
+  color: rgb(135, 41, 25);
+  text-align: center;
+  bottom: 0;
+  font-size: 0.9em;
+  font-style: oblique;
+  font-weight: bold;
+}
+.sched {
+  position: absolute;
+  top: 2px;
+}
+.options h2 {
+  position: absolute;
+  top: 3px;
+  margin-left: 20px;
+  font-size: 0.9em;
+}
+.options p {
+  position: absolute;
+  top: 60px;
+  left: 90px;
+  font-size: 0.8em;
+}
+.opt_1,
+.opt_3 {
+  padding-left: 30px;
+}
+.noShow {
+  display: none;
 }
