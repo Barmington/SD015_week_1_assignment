@@ -22,13 +22,6 @@ body {
   position: relative;
   background-image: url(https://spacey-kappa.vercel.app/assets/eclipse-11d9479c.jpg);
 }
-.show {
-  background-image: url(moonlight.jpg);
-  position: relative;
-  height: 700px;
-  background-size: cover;
-  background-position: center;
-}
 
 .hide {
   display: none;
@@ -65,12 +58,13 @@ a {
   padding: 15px 30px;
   border-radius: 8px;
 }
-.newAnchor {
-  font-family: sans-serif;
-  border: 2px solid white;
-  padding: 15px 30px;
-  border-radius: 8px;
-  color: #fff;
+a:hover .oldText {
+  display: none;
+}
+
+a:hover .newText:before {
+  content: "Click for booking";
+  color: rgb(230, 174, 164);
 }
 h1,
 h2,
@@ -116,4 +110,38 @@ footer p {
   border-radius: 20%;
   height: 30px;
   border: 1px solid white;
+}
+.booking {
+  display: flex;
+  /* justify-content: space-around; */
+  color: white;
+}
+.booking_table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 20px;
+  top: 150px;
+  right: 100px;
+  width: 50vw;
+  height: 40vh;
+}
+
+.booking_table h1 {
+  color: black;
+}
+.options {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 180px;
+  text-align: center;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  font-size: 0.5em;
+  font-style: italic;
+  font-weight: bold;
 }

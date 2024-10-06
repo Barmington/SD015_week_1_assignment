@@ -1,28 +1,36 @@
 "strict";
 
-document
-  .getElementById("change_text")
-  .addEventListener("mouseover", function () {
-    const changeFont = document.querySelector(".anchor_1");
-    const newA = document.getElementById("change_txt");
-    changeFont.classList.add("hide");
-    newA.classList.add("newAnchor");
-    newA.classList.add("space_info");
-    newA.textContent = "Click here for booking";
-    newA.style.border = "2 solid white";
-    newA.style.Color = "tomato";
+const newPage = document.getElementById("booking_page");
+newPage.addEventListener("click", function () {
+  const popup = document.getElementById("new_page");
+  popup.classList.add("booking_table");
 
-    // const fesLt = currentText.slice(0, 1).toUpperCase();
-    console.log(newA.textContent);
+  const opt1h2 = document.querySelector(".opt_1");
+  const opt1P = document.querySelector(".opt_1");
+  const opt2h2 = document.querySelector(".opt_2");
 
-    // newA.slice(1).toLowerCase();
-    // console.log(newA.slice(0, 1).toUpperCase());
+  const opt2P = document.querySelector(".opt_2");
+  const opt3h2 = document.querySelector(".opt_3");
+  const opt3P = document.querySelector(".opt_3");
 
-    // const newText = firstLetter + remLet;
-    // newText = newA.textContent;
-    // newA.style.color = black;
+  const h21 = document.createElement("h2");
+  const p1 = document.createElement("p");
+  const h22 = document.createElement("h2");
+  const p2 = document.createElement("p");
+  const h23 = document.createElement("h2");
+  const p3 = document.createElement("p");
 
-    // changeFont.style.backgroundColor = "white";
+  h21.textContent = "Economy";
+  p1.textContent = "£550";
+  h22.textContent = "Business class";
+  p2.textContent = "£700";
+  h23.textContent = "First class";
+  p3.textContent = "£1500";
 
-    // Update the text content of the element
-  });
+  opt1h2.appendChild(h21);
+  opt1P.appendChild(p1);
+  opt2h2.appendChild(h22);
+  opt2P.appendChild(p2);
+  opt3h2.appendChild(h23);
+  opt3P.appendChild(p3);
+});
